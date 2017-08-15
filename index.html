@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Hello Calculator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body ng-app="">
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Camposha.info</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<div class="container">
+    <h1 class="header center orange-text">AngularJS Hello World Calculator</h1>
+    <h4 class="center light-blue-text">Simple Calculator</h4>
+
+    <div class="row">
+        <div class="col s2">
+            <p>Multiply Numbers</p>
+            <input type="number" ng-model="firstNum"/> X <input type="number" ng-model="secondNum"/>
+            = <span>{{firstNum * secondNum}}</span>
+        </div>
+        <div class="col s2">
+            <p>Divide Numbers</p>
+            <input type="number" ng-model="firstNum"/> / <input type="number" ng-model="secondNum"/>
+            = <span>{{firstNum / secondNum}}</span>
+        </div>
+        <div class="col s2">
+            <p>Subtract Numbers</p>
+            <input type="number" ng-model="firstNum"/> - <input type="number" ng-model="secondNum"/>
+            = <span>{{firstNum - secondNum}}</span>
+        </div>
+        <div class="col s2">
+            <p>Add Numbers</p>
+            <input type="number" ng-model="firstNum"/> + <input type="number" ng-model="secondNum"/>
+            = <span>{{firstNum + secondNum}}</span>
+        </div>
+        <div class="col s2">
+            <p>Modulus</p>
+            <input type="number" ng-model="firstNum"/> % <input type="number" ng-model="secondNum"/>
+            = <span>{{firstNum % secondNum}}</span>
+        </div>
+        <div class="col s2">
+            <p>Increment</p>
+            <input type="number" ng-model="num" ng-init="num=10"/> ++ <input type="number" ng-model="secondNum"/>
+            = <span>{{num ++ secondNum}}</span>
+        </div>
+    </div>
+
+</div>
+<script src="assets/js/angular.min.js"></script>
+</body>
+</html>
+
